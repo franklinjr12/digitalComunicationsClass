@@ -2,7 +2,7 @@ close all;
 
 Fsampling = 50;
 Tsymbol = 1;
-Vamp = 0.1;
+Vamp = 10;
 Nbits = 100;
 
 t = 0:1/Fsampling:Nbits-1/Fsampling;
@@ -19,7 +19,6 @@ for i=1:length(t)/Nbits:length(t)
     end
 end
 
- 
 figure;
 plot(t,y);
 xlabel('tempo (s)');
@@ -74,6 +73,12 @@ for i = 1:step:length(y)
         n_wrong_bits = n_wrong_bits+1;
     end
 end
+
+n_wrong_bits
+disp('pause');
+pause;
+
+
 %=================================================
 %=================================================
 
