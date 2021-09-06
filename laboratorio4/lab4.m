@@ -92,10 +92,4 @@ for i=1:length(receiver)
     end
 end
 stem(eixo,points);
-%0.00125
-%0.001375
-
-% bits
-% bits_received
-
 wrong_bits = sum( bits ~= bits_received)
